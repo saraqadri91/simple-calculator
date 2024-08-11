@@ -1,0 +1,99 @@
+body {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzehHiW8WovHOGvd47ZehD2Q2KTECvSbyEQ&s);
+    background-color: #dfdb1c;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    color: white;
+   
+}
+.text{font-style:italic;
+font-size: 2.5rem;}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.child {
+    background: linear-gradient(135deg, #6a1b9a, #283593);
+    /* Royal Purple to Deep Blue gradient */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.keys:nth-child(n + 2) {
+    margin-top: 15px;
+}
+
+.num {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 2rem;
+    background: #9999ad;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.num:hover {
+    background: #8746af;
+    transform: scale(1.05);
+}
+
+.calc {
+
+    border-radius: 10px;
+    font-size: 2rem;
+    background: #8b54ad;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.calc:hover {
+    background: #283593;
+    transform: scale(1.05);
+}
+
+.sp {
+    font-size: 1.5rem;
+    width: 150px;
+    background: #8b54ad;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sp:hover {
+    background: #283593;
+    transform: scale(1.05);
+}

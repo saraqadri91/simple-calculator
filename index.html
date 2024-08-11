@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="shortcut icon" href="image/calculator-5-xxl.png" type="image/x-icon">
+    <title>Calculator</title>
 </head>
+
 <body>
-    <div class="main">
-    <input type="text">
+    <div class="text animate__animated animate__backInLeft">Simple Calculator</div>
+    <div class="child animate__animated animate__backInLeft">
+        <div class="main animate__animated animate__backInLeft">
+            <div id="date"></div>
+            <div id="time"></div>
+            <div class="battery">
+                <i class="fa-solid fa-battery-three-quarters" style="color: #f9fafa;"></i>
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" id="data">
+        </div>
+        <div class="keys">
+            <button onclick="del()" id="delete" class="num">Del</button>
+            <button onclick="clearDisplay()" class="num">AC</button>
+            <button onclick="togglePower()" class="num sp">ᴏɴ/ᴏғ</button>
+        </div>
+        <div class="keys">
+            <button onclick="getNumber(this)" class="num">7</button>
+            <button onclick="getNumber(this)" class="num">8</button>
+            <button onclick="getNumber(this)" class="num">9</button>
+            <button onclick="getNumber(this)" class="num">÷</button>
+        </div>
+        <div class="keys">
+            <button onclick="getNumber(this)" class="num">4</button>
+            <button onclick="getNumber(this)" class="num">5</button>
+            <button onclick="getNumber(this)" class="num">6</button>
+            <button onclick="getNumber(this)" class="num">x</button>
+        </div>
+        <div class="keys">
+            <button onclick="getNumber(this)" class="num">1</button>
+            <button onclick="getNumber(this)" class="num">2</button>
+            <button onclick="getNumber(this)" class="num">3</button>
+            <button onclick="getNumber(this)" class="num">-</button>
+        </div>
+        <div class="keys">
+            <button onclick="getNumber(this)" class="num">0</button>
+            <button onclick="getNumber(this)" class="num">.</button>
+            <button onclick="getNumber(this)" class="num">+</button>
+            <button class="calc" onclick="calculate()">=</button>
+        </div>
+    </div>
 
 
-</div>
+
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
