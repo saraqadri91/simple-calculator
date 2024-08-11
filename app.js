@@ -8,7 +8,7 @@ function getNumber(element) {
 
     
     var lastChar = value.slice(-1);
-    if (["+", "-", "x", "÷", "."].includes(elemetvalue) && ["+", "-", "x", "÷", "."].includes(lastChar)) {
+    if (["+", "-", "*", "÷", "."].includes(elemetvalue) && ["+", "-", "*", "÷", "."].includes(lastChar)) {
         return; 
     }
 
